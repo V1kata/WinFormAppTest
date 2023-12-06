@@ -67,6 +67,11 @@ public partial class Form1 : Form
 
     public void DeleteUser(object sender, EventArgs e)
     {
+        if (this.txtBox1.Text == "")
+        {
+            return;
+        }
+
         string username = this.txtBox1.Text;
 
         for (int i = 0; i < users.Count; i++)
@@ -81,6 +86,8 @@ public partial class Form1 : Form
                 MessageBox.Show("User doesn't exist");
             }
         }
+
+        ResetTxtBox();
     }
 
     public void ResetTxtBox()

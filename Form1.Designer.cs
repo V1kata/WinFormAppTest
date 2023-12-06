@@ -54,7 +54,7 @@ partial class Form1
         this.Controls.Add(updateBtn);
 
         this.deleteBtn = new Button();
-        this.deleteBtn.Location = new Point(0, 225);
+        this.deleteBtn.Location = new Point(300, 225);
         this.deleteBtn.Text = "Delete";
         this.deleteBtn.Click += DeleteUser;
         this.Controls.Add(deleteBtn);

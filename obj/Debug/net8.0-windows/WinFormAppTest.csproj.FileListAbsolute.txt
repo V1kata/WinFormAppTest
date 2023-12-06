@@ -12,3 +12,4 @@ D:\V1kata's\School programming\Uzunov\WinFormAppTest\obj\Debug\net8.0-windows\re
 D:\V1kata's\School programming\Uzunov\WinFormAppTest\obj\Debug\net8.0-windows\WinFormAppTest.pdb
 D:\V1kata's\School programming\Uzunov\WinFormAppTest\obj\Debug\net8.0-windows\WinFormAppTest.genruntimeconfig.cache
 D:\V1kata's\School programming\Uzunov\WinFormAppTest\obj\Debug\net8.0-windows\ref\WinFormAppTest.dll
+D:\V1kata's\School programming\Uzunov\WinFormAppTest\obj\Debug\net8.0-windows\WinFormAppTest.sourcelink.json
