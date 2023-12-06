@@ -1,0 +1,14 @@
+D:\V1kata's\School programming\Uzunov\WinFormAppTest\bin\Debug\net8.0-windows\WinFormAppTest.exe
+D:\V1kata's\School programming\Uzunov\WinFormAppTest\bin\Debug\net8.0-windows\WinFormAppTest.deps.json
+D:\V1kata's\School programming\Uzunov\WinFormAppTest\bin\Debug\net8.0-windows\WinFormAppTest.runtimeconfig.json
+D:\V1kata's\School programming\Uzunov\WinFormAppTest\bin\Debug\net8.0-windows\WinFormAppTest.dll
+D:\V1kata's\School programming\Uzunov\WinFormAppTest\bin\Debug\net8.0-windows\WinFormAppTest.pdb
+D:\V1kata's\School programming\Uzunov\WinFormAppTest\obj\Debug\net8.0-windows\WinFormAppTest.GeneratedMSBuildEditorConfig.editorconfig
+D:\V1kata's\School programming\Uzunov\WinFormAppTest\obj\Debug\net8.0-windows\WinFormAppTest.AssemblyInfoInputs.cache
+D:\V1kata's\School programming\Uzunov\WinFormAppTest\obj\Debug\net8.0-windows\WinFormAppTest.AssemblyInfo.cs
+D:\V1kata's\School programming\Uzunov\WinFormAppTest\obj\Debug\net8.0-windows\WinFormAppTest.csproj.CoreCompileInputs.cache
+D:\V1kata's\School programming\Uzunov\WinFormAppTest\obj\Debug\net8.0-windows\WinFormAppTest.dll
+D:\V1kata's\School programming\Uzunov\WinFormAppTest\obj\Debug\net8.0-windows\refint\WinFormAppTest.dll
+D:\V1kata's\School programming\Uzunov\WinFormAppTest\obj\Debug\net8.0-windows\WinFormAppTest.pdb
+D:\V1kata's\School programming\Uzunov\WinFormAppTest\obj\Debug\net8.0-windows\WinFormAppTest.genruntimeconfig.cache
+D:\V1kata's\School programming\Uzunov\WinFormAppTest\obj\Debug\net8.0-windows\ref\WinFormAppTest.dll
