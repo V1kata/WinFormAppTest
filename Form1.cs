@@ -1,110 +1,81 @@
-using Microsoft.VisualBasic.ApplicationServices;
 
-namespace WinFormAppTest;
+namespace winforms;
 
-public partial class Form1 : Form
+partial class Form1
 {
-    List<User> users = new List<User>();
-    // private static nextId = 0;
-    public Form1()
+    /// <summary>
+    ///  Required designer variable.
+    /// </summary>
+    private System.ComponentModel.IContainer components = null;
+
+    /// <summary>
+    ///  Clean up any resources being used.
+    /// </summary>
+    /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+    protected override void Dispose(bool disposing)
     {
-        InitializeComponent();
+        if (disposing && (components != null))
+        {
+            components.Dispose();
+        }
+        base.Dispose(disposing);
     }
 
-    public void AddUser(object sender, EventArgs e)
+    #region Windows Form Designer generated code
+
+    /// <summary>
+    ///  Required method for Designer support - do not modify
+    ///  the contents of this method with the code editor.
+    /// </summary>
+    private void InitializeComponent()
     {
-        if (CheckTxtBoxInfo())
-        {
-            return;
-        }
+        this.components = new System.ComponentModel.Container();
+        this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+        this.ClientSize = new System.Drawing.Size(400, 450);
+        this.Text = "Form1";
 
-        User user = new User(this.txtBox1.Text, this.txtBox2.Text);
-        users.Add(user);
+        this.addBtn = new Button();
+        this.addBtn.Text = "Add user";
+        this.addBtn.Location = new Point(0, 225);
+        this.addBtn.Click += AddUser;
+        this.Controls.Add(addBtn);
 
-        ResetTxtBox();
+        this.updateBtn = new Button();
+        this.updateBtn.Text = "Update user";
+        this.updateBtn.Location = new Point(200, 225);
+        this.updateBtn.Click += UpdateUser;
+        this.Controls.Add(updateBtn);
+
+        this.readBtn = new Button();
+        this.readBtn.Text = "Read all users";
+        this.readBtn.Location = new Point(100, 225);
+        this.readBtn.Click += ReadUser;
+        this.Controls.Add(readBtn);
+
+        this.deleteBtn = new Button();
+        this.deleteBtn.Text = "Delete user";
+        this.deleteBtn.Click += DeleteUser;
+        this.deleteBtn.Location = new Point(300, 225);
+        this.Controls.Add(deleteBtn);
+
+        this.txtBox1 = new TextBox();
+        this.txtBox1.PlaceholderText = "Username";
+        this.txtBox1.Location = new Point(50, 50);
+        this.Controls.Add(txtBox1);
+
+        this.txtBox2 = new TextBox();
+        this.txtBox2.PasswordChar = '*';
+        this.txtBox2.PlaceholderText = "Password";
+        this.txtBox2.Location = new Point(250, 50);
+        this.Controls.Add(txtBox2);
     }
 
-    public void ReadUser(object sender, EventArgs e)
-    {
-        string userData = "";
+    #endregion
 
-        foreach (var item in users)
-        {
-            userData += item.ToString() + "\n";
-        }
-
-        MessageBox.Show(userData);
-    }
-
-    public void UpdateUser(object sender, EventArgs e)
-    {
-        if (CheckTxtBoxInfo())
-        {
-            return;
-        }
-
-        string username = this.txtBox1.Text;
-        User currentUser;
-
-        for (int i = 0; i < users.Count; i++)
-        {
-            if (users[i].Username.Contains(username))
-            {
-                currentUser = users[i];
-                string newPassword = this.txtBox2.Text;
-                currentUser.Password = newPassword;
-                users[i] = currentUser;
-                break;
-            }
-            else
-            {
-                MessageBox.Show("User doesn't exist");
-            }
-        }
-
-        ResetTxtBox();
-    }
-
-    public void DeleteUser(object sender, EventArgs e)
-    {
-        if (this.txtBox1.Text == "")
-        {
-            return;
-        }
-
-        string username = this.txtBox1.Text;
-
-        for (int i = 0; i < users.Count; i++)
-        {
-            if (users[i].Username.Equals(username))
-            {
-                users.RemoveAt(i);
-                break;
-            }
-            else
-            {
-                MessageBox.Show("User doesn't exist");
-            }
-        }
-
-        ResetTxtBox();
-    }
-
-    public void ResetTxtBox()
-    {
-        this.txtBox1.Text = "";
-        this.txtBox2.Text = "";
-    }
-
-    public bool CheckTxtBoxInfo()
-    {
-        if (this.txtBox1.Text == "" || this.txtBox2.Text == "")
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-    }
+    public Button addBtn;
+    public Button updateBtn;
+    public Button readBtn;
+    public Button deleteBtn;
+    public TextBox txtBox1;
+    public TextBox txtBox2;
 }
